@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid gap-12 md:grid-cols-3">
         {/* Col 1 */}
         <div>
-          <img src={calicLogo} alt="Calic Consulting" className="mb-4 h-10 w-auto" />
+          <img src={calicLogo} alt="Calic Consulting" className="mb-4 h-20 w-auto" />
           <p className="text-sm leading-relaxed text-charcoal-foreground/60">
             Specialist finance consulting for UK central government. Precision, expertise, and lasting public value.
           </p>

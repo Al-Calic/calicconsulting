@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           {/* Logo placeholder */}
-          <img src={calicLogo} alt="Calic Consulting" className="h-10 w-auto" />
+          <img src={calicLogo} alt="Calic Consulting" className="h-20 w-auto" />
         </Link>
 
         {/* Desktop */}
