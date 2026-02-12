@@ -12,6 +12,7 @@ import PageLayout from "@/components/PageLayout";
 import ScrollReveal from "@/components/ScrollReveal";
 import dcmsLogo from "@/assets/dcms-logo.png";
 import dbtLogo from "@/assets/dbt-logo.png";
+import ukriLogo from "@/assets/ukri-logo.png";
 
 const services = [
   { icon: RefreshCw, title: "Finance Transformation", desc: "Designing and delivering operating model changes, process improvements, and capability building across government finance functions." },
@@ -69,21 +70,16 @@ const Index = () => (
         <p className="mb-8 text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
           Trusted By
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          <div className="flex h-14 items-center">
-            <img src={dcmsLogo} alt="Department for Culture, Media and Sport" className="h-12 object-contain grayscale" />
+        <div className="flex flex-wrap items-center justify-center gap-10 md:gap-20">
+          <div className="flex h-24 items-center">
+            <img src={dcmsLogo} alt="Department for Culture, Media and Sport" className="h-20 object-contain grayscale" />
           </div>
-          <div className="flex h-14 items-center">
-            <img src={dbtLogo} alt="Department for Business and Trade" className="h-12 object-contain grayscale" />
+          <div className="flex h-24 items-center">
+            <img src={dbtLogo} alt="Department for Business and Trade" className="h-20 object-contain grayscale" />
           </div>
-          {clients.filter(c => !c.startsWith("DCMS") && !c.startsWith("DBT")).map((c) => (
-            <div
-              key={c}
-              className="flex h-14 items-center rounded-md border border-border bg-secondary px-6 text-xs font-medium tracking-wide text-muted-foreground"
-            >
-              {c}
-            </div>
-          ))}
+          <div className="flex h-24 items-center">
+            <img src={ukriLogo} alt="UK Research and Innovation" className="h-20 object-contain grayscale" />
+          </div>
         </div>
       </div>
     </section>
