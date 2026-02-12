@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import ScrollReveal from "@/components/ScrollReveal";
+import dcmsLogo from "@/assets/dcms-logo.png";
 
 const services = [
   { icon: RefreshCw, title: "Finance Transformation", desc: "Designing and delivering operating model changes, process improvements, and capability building across government finance functions." },
@@ -68,7 +69,10 @@ const Index = () => (
           Trusted By
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          {clients.map((c) => (
+          <div className="flex h-14 items-center">
+            <img src={dcmsLogo} alt="Department for Culture, Media and Sport" className="h-12 object-contain grayscale" />
+          </div>
+          {clients.filter(c => !c.startsWith("DCMS")).map((c) => (
             <div
               key={c}
               className="flex h-14 items-center rounded-md border border-border bg-secondary px-6 text-xs font-medium tracking-wide text-muted-foreground"
