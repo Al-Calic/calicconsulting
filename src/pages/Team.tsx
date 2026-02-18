@@ -1,14 +1,15 @@
 import { User } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import ScrollReveal from "@/components/ScrollReveal";
+import altafPhoto from "@/assets/altaf-photo.png";
 import bideshPhoto from "@/assets/bidesh-photo.png";
 
 const team = [
   {
     name: "Altaf Daya",
     role: "Founding Partner",
-    bio: "Altaf is a chartered accountant and the founder of Calic Consulting. With a career spanning KPMG, senior finance roles in the energy sector, and Accenture's advisory practice, Altaf brings a rare combination of technical depth, commercial acumen, and practical delivery experience. He has spent over a decade working with complex organisations on transformation, operational improvement, and capability building — with particular depth in finance, programme delivery, and business case development. Altaf is passionate about delivering genuine impact and ensuring that every engagement leaves clients stronger and more capable.",
-    photo: null,
+    bio: "Altaf is a Chartered Accountant and the founder of Calic Consulting. With a career spanning KPMG, senior finance roles in the energy sector, Accenture's advisory practice, and across Government, Altaf brings a rare combination of technical depth, commercial acumen, and practical delivery experience. He has spent over a decade working with complex organisations on transformation, operational improvement, and capability building - with particular depth in finance, programme delivery, and business case development. Altaf is passionate about delivering genuine impact and ensuring that every engagement leaves clients stronger and more capable.",
+    photo: altafPhoto,
   },
   {
     name: "Bidesh Sarkar CBE",
