@@ -5,10 +5,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const subjects = [
   "General Enquiry",
-  "Finance Transformation",
-  "Annual Accounts",
-  "Business Case",
-  "Subsidy Control",
+  "Transformation & Change",
+  "Finance",
+  "Digital & Technology",
+  "People & Workforce",
+  "Programme Delivery",
+  "Commercial",
   "Other",
 ];
 
@@ -28,7 +30,7 @@ const Contact = () => {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Contact</p>
             <h1 className="max-w-2xl text-4xl font-bold text-charcoal-foreground md:text-5xl">Get in Touch</h1>
             <p className="mt-4 max-w-xl text-charcoal-foreground/70">
-              Whether you have a specific requirement or would like an informal conversation, we'd be pleased to hear from you.
+              Whether you have a specific requirement or would like an informal conversation about how we might help, we'd be pleased to hear from you.
             </p>
           </ScrollReveal>
         </div>

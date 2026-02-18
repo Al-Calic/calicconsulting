@@ -7,7 +7,7 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
-  { to: "/case-studies", label: "Case Studies" },
+  { to: "/experience", label: "Experience" },
   { to: "/team", label: "Team" },
   { to: "/contact", label: "Contact" },
 ];
@@ -20,11 +20,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal text-charcoal-foreground">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          {/* Logo placeholder */}
           <img src={calicLogo} alt="Calic Consulting" className="h-20 w-auto" />
         </Link>
 
-        {/* Desktop */}
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((l) => (
             <li key={l.to}>
@@ -42,7 +40,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden"
           onClick={() => setOpen(!open)}
@@ -52,7 +49,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile panel */}
       {open && (
         <div className="border-t border-charcoal-foreground/10 bg-charcoal md:hidden">
           <ul className="flex flex-col gap-1 px-6 py-4">

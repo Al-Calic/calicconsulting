@@ -3,11 +3,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const steps = [
   { num: "01", title: "Understand", desc: "We invest time in understanding your organisation's context, constraints, and ambitions before proposing solutions." },
-  { num: "02", title: "Deliver", desc: "We embed with your teams, working at pace to deliver tangible outputs — not slide decks." },
+  { num: "02", title: "Deliver", desc: "We embed with your teams, working across disciplines and at pace to deliver tangible outcomes — not slide decks." },
   { num: "03", title: "Sustain", desc: "We transfer knowledge and build capability so improvements last well beyond our engagement." },
 ];
 
-const values = ["Integrity", "Rigour", "Partnership", "Value"];
+const values = ["Integrity", "Rigour", "Partnership", "Discretion"];
 
 const About = () => (
   <PageLayout>
@@ -28,17 +28,17 @@ const About = () => (
       <div className="mx-auto max-w-3xl space-y-6">
         <ScrollReveal>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Calic Consulting is a boutique advisory firm built around a single conviction: that central government deserves the same calibre of finance expertise typically reserved for the private sector — delivered with commitment, without the overhead of large consultancy firms.
+            Calic Consulting is a boutique advisory firm built around a single conviction: that complex organisations deserve access to exceptional talent and deep expertise — delivered with commitment, agility, and without the overhead of large consultancy firms.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Founded by Altaf Daya, a chartered accountant with experience spanning KPMG, Accenture, and senior finance roles in the energy sector, Calic brings together a carefully selected network of specialists who understand the unique demands of public sector finance.
+            Founded by Altaf Daya, a chartered accountant with experience spanning KPMG, Accenture, and senior roles in the energy sector, Calic brings together a carefully selected network of specialists across finance, digital, people, commercial, and change disciplines.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.2}>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            We work alongside departments and arms-length bodies to strengthen financial capability, navigate complex HM Treasury processes, and deliver transformation that endures beyond our engagement.
+            We work alongside organisations in the public, private, and non-profit sectors to strengthen operational capability, deliver complex transformation, and build lasting resilience. Whether it's modernising a finance function, leading a digital programme, or redesigning how an organisation manages its people, we bring the same rigour, pragmatism, and commitment to every engagement.
           </p>
         </ScrollReveal>
       </div>

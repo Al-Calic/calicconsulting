@@ -5,15 +5,13 @@ const Footer = () => (
   <footer className="bg-charcoal text-charcoal-foreground/80">
     <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <div className="grid gap-12 md:grid-cols-3">
-        {/* Col 1 */}
         <div>
           <img src={calicLogo} alt="Calic Consulting" className="mb-4 h-20 w-auto" />
           <p className="text-sm leading-relaxed text-charcoal-foreground/60">
-            Specialist finance consulting for UK central government. Precision, expertise, and lasting public value.
+            Transformation consulting for complex organisations. Precision, expertise, and lasting impact.
           </p>
         </div>
 
-        {/* Col 2 */}
         <div>
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-charcoal-foreground/50">Quick Links</h4>
           <ul className="space-y-2 text-sm">
@@ -21,7 +19,7 @@ const Footer = () => (
               { to: "/", label: "Home" },
               { to: "/about", label: "About" },
               { to: "/services", label: "Services" },
-              { to: "/case-studies", label: "Case Studies" },
+              { to: "/experience", label: "Experience" },
               { to: "/team", label: "Team" },
               { to: "/contact", label: "Contact" },
             ].map((l) => (
@@ -34,7 +32,6 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Col 3 */}
         <div>
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-charcoal-foreground/50">Contact</h4>
           <p className="text-sm">sarah@calicconsulting.co.uk</p>

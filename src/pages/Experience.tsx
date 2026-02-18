@@ -5,31 +5,34 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const studies = [
   {
-    sector: "Central Government Department",
-    title: "Finance Transformation Programme Support",
-    summary: "Calic provided senior finance expertise to support a major departmental transformation programme, delivering financial modelling, business case development, and programme reporting across multiple workstreams.",
+    sector: "Central Government",
+    title: "Finance Transformation Programme",
+    summary: "Led the design and delivery of a multi-year finance transformation programme for a major government department, encompassing operating model redesign, process improvement, and capability building across the finance function.",
   },
   {
-    sector: "Arms-Length Body",
-    title: "Annual Accounts Delivery & Audit Liaison",
-    summary: "We embedded with the department's finance team to deliver the annual report and accounts on time and to a high standard, providing technical accounting guidance and acting as the primary liaison with external auditors.",
+    sector: "Public Sector Body",
+    title: "Digital Service Delivery Programme",
+    summary: "Provided programme leadership and governance for a national digital service rollout, coordinating across technology, operations, and policy teams to deliver on time and within budget.",
   },
   {
-    sector: "Central Government Department",
-    title: "Subsidy Control Assessment for a National Grant Scheme",
-    summary: "Calic conducted an independent subsidy control assessment for a new national funding scheme, ensuring compliance with the Subsidy Control Act 2022 and providing assurance to the department's accounting officer.",
+    sector: "Non-Profit Organisation",
+    title: "Organisational Restructure & Workforce Planning",
+    summary: "Supported a major non-profit through a full organisational restructure, including workforce planning, role design, change management, and stakeholder engagement — ensuring continuity of service delivery throughout the transition.",
   },
 ];
 
-const CaseStudies = () => (
+const Experience = () => (
   <PageLayout>
     <section className="section-padding bg-charcoal">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Case Studies</p>
-          <h1 className="max-w-2xl text-4xl font-bold text-charcoal-foreground md:text-5xl">Case Studies</h1>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">Experience</p>
+          <h1 className="max-w-2xl text-4xl font-bold text-charcoal-foreground md:text-5xl">Experience</h1>
           <p className="mt-4 max-w-xl text-charcoal-foreground/70">
-            Selected examples of our work across central government.
+            A selection of the work delivered by our team — across the public, private, and non-profit sectors.
+          </p>
+          <p className="mt-3 max-w-xl text-sm text-charcoal-foreground/60">
+            Our team brings decades of combined experience from senior roles in government, Big Four firms, and leading consultancies. Below is a sample of the engagements our people have led.
           </p>
         </ScrollReveal>
       </div>
@@ -65,4 +68,4 @@ const CaseStudies = () => (
   </PageLayout>
 );
 
-export default CaseStudies;
+export default Experience;
