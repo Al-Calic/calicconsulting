@@ -40,7 +40,7 @@ const Team = () => (
             <ScrollReveal key={t.name} delay={i * 0.1}>
               <div className="rounded-lg border border-border bg-card p-8">
                 {t.photo ? (
-                  <img src={t.photo} alt={t.name} className="mb-6 h-28 w-28 rounded-full object-cover" />
+                  <img src={t.photo} alt={t.name} className="mb-6 h-28 w-28 rounded-full object-cover object-top" />
                 ) : (
                   <div className="mb-6 flex h-28 w-28 items-center justify-center rounded-full bg-secondary">
                     <User className="text-muted-foreground" size={40} strokeWidth={1.5} />
