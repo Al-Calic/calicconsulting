@@ -49,9 +49,6 @@ const Team = () => (
                 <h3 className="text-xl font-bold">{t.name}</h3>
                 <p className="mb-4 text-sm font-semibold text-primary">{t.role}</p>
                 <p className="text-sm leading-relaxed text-muted-foreground">{t.bio}</p>
-                <div className="mt-6 inline-block rounded border border-border px-3 py-1 text-xs text-muted-foreground">
-                  Professional accreditations
-                </div>
               </div>
             </ScrollReveal>
           ))}
