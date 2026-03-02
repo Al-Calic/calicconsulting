@@ -34,7 +34,7 @@ const Footer = () => (
 
         <div>
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-charcoal-foreground/50">Contact</h4>
-          <p className="text-sm">sarah@calicconsulting.co.uk</p>
+          <p className="text-sm">info@calicconsulting.co.uk</p>
           <a href="https://www.linkedin.com/in/altaf-daya-Calic" target="_blank" rel="noopener noreferrer" className="mt-2 block text-sm transition-colors hover:text-primary">LinkedIn</a>
         </div>
       </div>

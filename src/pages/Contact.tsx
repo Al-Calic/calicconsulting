@@ -93,9 +93,9 @@ const Contact = () => {
                 <div>
                   <h3 className="mb-4 text-lg font-semibold">Contact Information</h3>
                   <div className="space-y-4">
-                    <a href="mailto:sarah@calicconsulting.co.uk" className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary">
+                    <a href="mailto:info@calicconsulting.co.uk" className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary">
                       <Mail size={18} className="text-primary" />
-                      sarah@calicconsulting.co.uk
+                      info@calicconsulting.co.uk
                     </a>
                     <a href="https://www.linkedin.com/in/altaf-daya-Calic" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary">
                       <Linkedin size={18} className="text-primary" />
