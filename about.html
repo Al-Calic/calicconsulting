@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Calic Consulting's approach to transformation consulting — boutique expertise, senior delivery, and lasting impact for complex public sector organisations.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calicconsulting.co.uk/about">
+  <meta property="og:title" content="About | Calic Consulting">
+  <meta property="og:description" content="Boutique advisory firm delivering transformation consulting with deep expertise across finance, digital, people, and programme management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calicconsulting.co.uk/about">
+  <meta property="og:image" content="https://calicconsulting.co.uk/assets/img-0.png">
+  <meta property="og:site_name" content="Calic Consulting">
+  <title>About | Calic Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#2C3D4F',
+            'navy-dark': '#1e2d3d',
+            teal: '#7EC8D8',
+            'teal-light': '#a3dbe6',
+            'grey-light': '#F5F6F7',
+            'text-body': '#333333',
+          },
+          fontFamily: {
+            sans: ['Century Gothic', 'sans-serif'],
+          },
+          borderRadius: {
+            sm: '4px',
+            md: '6px',
+            lg: '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: #7EC8D8; width: 0%; z-index: 100;
+      transition: width 0.1s linear;
+    }
+
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    .cursor-glow {
+      position: fixed; width: 300px; height: 300px;
+      border-radius: 50%; pointer-events: none; z-index: 0;
+      background: radial-gradient(circle, rgba(126,200,216,0.08) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: left 0.3s ease-out, top 0.3s ease-out;
+    }
+
+    .nav-link {
+      position: relative; padding-bottom: 2px;
+      transition: color 0.2s ease;
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -2px; left: 0;
+      width: 0; height: 2px; background: #7EC8D8;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link:hover { color: #7EC8D8; }
+
+    .mobile-menu {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .mobile-menu.open { max-height: 400px; }
+
+    .approach-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .approach-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body class="bg-white text-text-body font-sans">
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow hidden lg:block" id="cursorGlow"></div>
+
+  <!-- Header -->
+  <header class="bg-navy fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center no-underline">
+          <img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto">
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white text-sm tracking-wide">Home</a>
+          <a href="about.html" class="nav-link active text-teal text-sm tracking-wide">About</a>
+          <a href="services.html" class="nav-link text-white text-sm tracking-wide">Services</a>
+          <a href="experience.html" class="nav-link text-white text-sm tracking-wide">Experience</a>
+          <a href="team.html" class="nav-link text-white text-sm tracking-wide">Team</a>
+          <a href="contact.html" class="nav-link text-white text-sm tracking-wide">Contact</a>
+        </nav>
+        <button class="md:hidden text-white" id="menuBtn" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu md:hidden" id="mobileMenu">
+        <div class="pb-4 flex flex-col gap-1">
+          <a href="index.html" class="text-white text-sm tracking-wide py-2">Home</a>
+          <a href="about.html" class="text-teal text-sm tracking-wide py-2">About</a>
+          <a href="services.html" class="text-white text-sm tracking-wide py-2">Services</a>
+          <a href="experience.html" class="text-white text-sm tracking-wide py-2">Experience</a>
+          <a href="team.html" class="text-white text-sm tracking-wide py-2">Team</a>
+          <a href="contact.html" class="text-white text-sm tracking-wide py-2">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-navy pt-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
+      <p class="text-teal text-xs tracking-[0.3em] uppercase mb-4 reveal">About</p>
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight reveal reveal-delay-1">About Calic Consulting</h1>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="space-y-6 text-text-body text-base leading-relaxed">
+        <p class="reveal">
+          Calic Consulting is a boutique advisory firm built around a single conviction: that complex organisations deserve access to exceptional talent and deep expertise — delivered with commitment, agility, and without the overhead of large consultancy firms.
+        </p>
+        <p class="reveal reveal-delay-1">
+          Founded by Altaf Daya, a chartered accountant with experience spanning KPMG, Accenture, and senior roles in the energy sector, Calic brings together a carefully selected network of specialists across finance, digital, people, commercial, and change disciplines.
+        </p>
+        <p class="reveal reveal-delay-2">
+          We work alongside organisations in the public, private, and non-profit sectors to strengthen operational capability, deliver complex transformation, and build lasting resilience. Whether it's modernising a finance function, leading a digital programme, or redesigning how an organisation manages its people, we bring the same rigour, pragmatism, and commitment to every engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="py-16 lg:py-24 bg-grey-light">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-black text-3xl md:text-4xl font-bold text-center mb-16 reveal">Our Approach</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="approach-card bg-white rounded-lg p-8 text-center reveal reveal-delay-1">
+          <div class="text-teal text-4xl font-bold mb-4">01</div>
+          <h3 class="text-black font-bold text-xl mb-3">Understand</h3>
+          <p class="text-text-body text-sm leading-relaxed">We invest time in understanding your organisation's context, constraints, and ambitions before proposing solutions.</p>
+        </div>
+        <div class="approach-card bg-white rounded-lg p-8 text-center reveal reveal-delay-2">
+          <div class="text-teal text-4xl font-bold mb-4">02</div>
+          <h3 class="text-black font-bold text-xl mb-3">Deliver</h3>
+          <p class="text-text-body text-sm leading-relaxed">We embed with your teams, working across disciplines and at pace to deliver tangible outcomes — not slide decks.</p>
+        </div>
+        <div class="approach-card bg-white rounded-lg p-8 text-center reveal reveal-delay-3">
+          <div class="text-teal text-4xl font-bold mb-4">03</div>
+          <h3 class="text-black font-bold text-xl mb-3">Sustain</h3>
+          <p class="text-text-body text-sm leading-relaxed">We transfer knowledge and build capability so improvements last well beyond our engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-black text-3xl md:text-4xl font-bold text-center mb-16 reveal">Our Values</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center reveal reveal-delay-1">
+          <div class="w-16 h-16 bg-navy rounded-lg mx-auto flex items-center justify-center mb-5">
+            <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-black font-bold text-lg">Integrity</h3>
+        </div>
+        <div class="text-center reveal reveal-delay-2">
+          <div class="w-16 h-16 bg-navy rounded-lg mx-auto flex items-center justify-center mb-5">
+            <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="text-black font-bold text-lg">Rigour</h3>
+        </div>
+        <div class="text-center reveal reveal-delay-3">
+          <div class="w-16 h-16 bg-navy rounded-lg mx-auto flex items-center justify-center mb-5">
+            <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-black font-bold text-lg">Partnership</h3>
+        </div>
+        <div class="text-center reveal reveal-delay-4">
+          <div class="w-16 h-16 bg-navy rounded-lg mx-auto flex items-center justify-center mb-5">
+            <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3 class="text-black font-bold text-lg">Discretion</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-20 bg-grey-light">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-text-body text-lg reveal">Transformation consulting for complex organisations. Precision, expertise, and lasting impact.</p>
+    </div>
+  </section>
+
+  <!-- Teal accent bar -->
+  <div class="h-2 bg-teal"></div>
+
+  <!-- Footer -->
+  <footer class="bg-navy py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <a href="index.html" class="inline-block mb-4">
+            <img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto">
+          </a>
+          <p class="text-gray-400 text-sm">Transformation consulting for complex organisations.</p>
+          <p class="text-gray-400 text-sm">Precision, expertise, and lasting impact.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Quick Links</h4>
+          <nav class="flex flex-col gap-3">
+            <a href="index.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Home</a>
+            <a href="about.html" class="text-gray-400 text-sm hover:text-teal transition-colors">About</a>
+            <a href="services.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Services</a>
+            <a href="experience.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Experience</a>
+            <a href="team.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Team</a>
+            <a href="contact.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Contact</h4>
+          <a href="mailto:info@calicconsulting.co.uk" class="text-teal text-sm hover:text-teal-light transition-colors block mb-2">info@calicconsulting.co.uk</a>
+          <a href="https://www.linkedin.com/company/calic-consulting" target="_blank" rel="noopener noreferrer" class="text-gray-400 text-sm hover:text-teal transition-colors">LinkedIn</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8">
+        <p class="text-gray-500 text-xs text-center">&copy; 2026 Calic Consulting Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
+
+    if (window.innerWidth >= 1024) {
+      const glow = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', (e) => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top = e.clientY + 'px';
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

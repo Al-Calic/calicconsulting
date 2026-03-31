@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected case studies from Calic Consulting — transformation delivery across central government, public sector bodies, and non-profit organisations.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calicconsulting.co.uk/experience">
+  <meta property="og:title" content="Experience | Calic Consulting">
+  <meta property="og:description" content="Case studies demonstrating transformation delivery across central government, public sector, and non-profit organisations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calicconsulting.co.uk/experience">
+  <meta property="og:image" content="https://calicconsulting.co.uk/assets/img-0.png">
+  <meta property="og:site_name" content="Calic Consulting">
+  <title>Experience | Calic Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#2C3D4F',
+            teal: '#7EC8D8',
+            'teal-light': '#a3dbe6',
+            'grey-light': '#F5F6F7',
+            'text-body': '#333333',
+          },
+          fontFamily: {
+            sans: ['Century Gothic', 'sans-serif'],
+          },
+          borderRadius: { sm: '4px', md: '6px', lg: '8px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: #7EC8D8; width: 0%; z-index: 100; transition: width 0.1s linear; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .cursor-glow { position: fixed; width: 300px; height: 300px; border-radius: 50%; pointer-events: none; z-index: 0; background: radial-gradient(circle, rgba(126,200,216,0.08) 0%, transparent 70%); transform: translate(-50%, -50%); transition: left 0.3s ease-out, top 0.3s ease-out; }
+    .nav-link { position: relative; padding-bottom: 2px; transition: color 0.2s ease; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #7EC8D8; transition: width 0.3s ease; }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link:hover { color: #7EC8D8; }
+    .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .mobile-menu.open { max-height: 400px; }
+  </style>
+</head>
+<body class="bg-white text-text-body font-sans">
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow hidden lg:block" id="cursorGlow"></div>
+
+  <!-- Header -->
+  <header class="bg-navy fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center no-underline">
+          <img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto">
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white text-sm tracking-wide">Home</a>
+          <a href="about.html" class="nav-link text-white text-sm tracking-wide">About</a>
+          <a href="services.html" class="nav-link text-white text-sm tracking-wide">Services</a>
+          <a href="experience.html" class="nav-link active text-teal text-sm tracking-wide">Experience</a>
+          <a href="team.html" class="nav-link text-white text-sm tracking-wide">Team</a>
+          <a href="contact.html" class="nav-link text-white text-sm tracking-wide">Contact</a>
+        </nav>
+        <button class="md:hidden text-white" id="menuBtn" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div class="mobile-menu md:hidden" id="mobileMenu">
+        <div class="pb-4 flex flex-col gap-1">
+          <a href="index.html" class="text-white text-sm tracking-wide py-2">Home</a>
+          <a href="about.html" class="text-white text-sm tracking-wide py-2">About</a>
+          <a href="services.html" class="text-white text-sm tracking-wide py-2">Services</a>
+          <a href="experience.html" class="text-teal text-sm tracking-wide py-2">Experience</a>
+          <a href="team.html" class="text-white text-sm tracking-wide py-2">Team</a>
+          <a href="contact.html" class="text-white text-sm tracking-wide py-2">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-navy pt-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
+      <p class="text-teal text-xs tracking-[0.3em] uppercase mb-4 reveal">Experience</p>
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 reveal reveal-delay-1">Experience</h1>
+      <p class="text-gray-300 text-base max-w-3xl reveal reveal-delay-2">A selection of the work delivered by our team — across the public, private, and non-profit sectors.</p>
+      <p class="text-gray-400 text-sm max-w-3xl mt-4 reveal reveal-delay-2">Our team brings decades of combined experience from senior roles in government, Big Four firms, and leading consultancies. Below is a sample of the engagements our people have led.</p>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="bg-grey-light py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Finance Transformation Programme -->
+        <div class="bg-white rounded-lg p-8 shadow-sm reveal">
+          <p class="text-teal text-xs tracking-[0.2em] uppercase font-semibold mb-3">Central Government</p>
+          <h3 class="text-black text-lg font-bold mb-4">Finance Transformation Programme</h3>
+          <p class="text-text-body text-sm leading-relaxed mb-6">Led the design and delivery of a multi-year finance transformation programme for a major government department, encompassing operating model redesign, process improvement, and capability building across the finance function.</p>
+          <a href="#" class="text-teal text-sm font-semibold hover:text-teal-light transition-colors">Read More &rarr;</a>
+        </div>
+
+        <!-- Digital Service Delivery Programme -->
+        <div class="bg-white rounded-lg p-8 shadow-sm reveal reveal-delay-1">
+          <p class="text-teal text-xs tracking-[0.2em] uppercase font-semibold mb-3">Public Sector Body</p>
+          <h3 class="text-black text-lg font-bold mb-4">Digital Service Delivery Programme</h3>
+          <p class="text-text-body text-sm leading-relaxed mb-6">Provided programme leadership and governance for a national digital service rollout, coordinating across technology, operations, and policy teams to deliver on time and within budget.</p>
+          <a href="#" class="text-teal text-sm font-semibold hover:text-teal-light transition-colors">Read More &rarr;</a>
+        </div>
+
+        <!-- Organisational Restructure -->
+        <div class="bg-white rounded-lg p-8 shadow-sm reveal reveal-delay-2">
+          <p class="text-teal text-xs tracking-[0.2em] uppercase font-semibold mb-3">Non-Profit Organisation</p>
+          <h3 class="text-black text-lg font-bold mb-4">Organisational Restructure & Workforce Planning</h3>
+          <p class="text-text-body text-sm leading-relaxed mb-6">Supported a major non-profit through a full organisational restructure, including workforce planning, role design, change management, and stakeholder engagement — ensuring continuity of service delivery throughout the transition.</p>
+          <a href="#" class="text-teal text-sm font-semibold hover:text-teal-light transition-colors">Read More &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center reveal">
+      <p class="text-text-body text-lg mb-6">We're happy to discuss our experience in more detail.</p>
+      <a href="mailto:info@calicconsulting.co.uk" class="text-teal text-lg font-semibold hover:text-teal-light transition-colors">Get in touch &rarr;</a>
+    </div>
+  </section>
+
+  <!-- CTA Tagline -->
+  <section class="py-16 lg:py-20 bg-grey-light">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-text-body text-lg reveal">Transformation consulting for complex organisations. Precision, expertise, and lasting impact.</p>
+    </div>
+  </section>
+
+  <div class="h-2 bg-teal"></div>
+
+  <!-- Footer -->
+  <footer class="bg-navy py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <a href="index.html" class="inline-block mb-4"><img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto"></a>
+          <p class="text-gray-400 text-sm">Transformation consulting for complex organisations.</p>
+          <p class="text-gray-400 text-sm">Precision, expertise, and lasting impact.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Quick Links</h4>
+          <nav class="flex flex-col gap-3">
+            <a href="index.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Home</a>
+            <a href="about.html" class="text-gray-400 text-sm hover:text-teal transition-colors">About</a>
+            <a href="services.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Services</a>
+            <a href="experience.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Experience</a>
+            <a href="team.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Team</a>
+            <a href="contact.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Contact</h4>
+          <a href="mailto:info@calicconsulting.co.uk" class="text-teal text-sm hover:text-teal-light transition-colors block mb-2">info@calicconsulting.co.uk</a>
+          <a href="https://www.linkedin.com/company/calic-consulting" target="_blank" rel="noopener noreferrer" class="text-gray-400 text-sm hover:text-teal transition-colors">LinkedIn</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8">
+        <p class="text-gray-500 text-xs text-center">&copy; 2026 Calic Consulting Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY, d = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById('scrollProgress').style.width = (d > 0 ? (s/d)*100 : 0) + '%';
+    });
+    if (window.innerWidth >= 1024) {
+      const g = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', e => { g.style.left = e.clientX+'px'; g.style.top = e.clientY+'px'; });
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

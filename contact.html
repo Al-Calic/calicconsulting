@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Calic Consulting to discuss transformation consulting, finance, digital, or programme delivery for your organisation.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://calicconsulting.co.uk/contact">
+  <meta property="og:title" content="Contact | Calic Consulting">
+  <meta property="og:description" content="Contact Calic Consulting to discuss transformation, finance, digital, or programme delivery for public sector organisations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calicconsulting.co.uk/contact">
+  <meta property="og:image" content="https://calicconsulting.co.uk/assets/img-0.png">
+  <meta property="og:site_name" content="Calic Consulting">
+  <title>Contact | Calic Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#2C3D4F',
+            teal: '#7EC8D8',
+            'teal-light': '#a3dbe6',
+            'grey-light': '#F5F6F7',
+            'text-body': '#333333',
+          },
+          fontFamily: {
+            sans: ['Century Gothic', 'sans-serif'],
+          },
+          borderRadius: { sm: '4px', md: '6px', lg: '8px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: #7EC8D8; width: 0%; z-index: 100; transition: width 0.1s linear; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .cursor-glow { position: fixed; width: 300px; height: 300px; border-radius: 50%; pointer-events: none; z-index: 0; background: radial-gradient(circle, rgba(126,200,216,0.08) 0%, transparent 70%); transform: translate(-50%, -50%); transition: left 0.3s ease-out, top 0.3s ease-out; }
+    .nav-link { position: relative; padding-bottom: 2px; transition: color 0.2s ease; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #7EC8D8; transition: width 0.3s ease; }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link:hover { color: #7EC8D8; }
+    .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .mobile-menu.open { max-height: 400px; }
+  </style>
+</head>
+<body class="bg-white text-text-body font-sans">
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow hidden lg:block" id="cursorGlow"></div>
+
+  <!-- Header -->
+  <header class="bg-navy fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center no-underline">
+          <img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto">
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white text-sm tracking-wide">Home</a>
+          <a href="about.html" class="nav-link text-white text-sm tracking-wide">About</a>
+          <a href="services.html" class="nav-link text-white text-sm tracking-wide">Services</a>
+          <a href="experience.html" class="nav-link text-white text-sm tracking-wide">Experience</a>
+          <a href="team.html" class="nav-link text-white text-sm tracking-wide">Team</a>
+          <a href="contact.html" class="nav-link active text-teal text-sm tracking-wide">Contact</a>
+        </nav>
+        <button class="md:hidden text-white" id="menuBtn" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div class="mobile-menu md:hidden" id="mobileMenu">
+        <div class="pb-4 flex flex-col gap-1">
+          <a href="index.html" class="text-white text-sm tracking-wide py-2">Home</a>
+          <a href="about.html" class="text-white text-sm tracking-wide py-2">About</a>
+          <a href="services.html" class="text-white text-sm tracking-wide py-2">Services</a>
+          <a href="experience.html" class="text-white text-sm tracking-wide py-2">Experience</a>
+          <a href="team.html" class="text-white text-sm tracking-wide py-2">Team</a>
+          <a href="contact.html" class="text-teal text-sm tracking-wide py-2">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-navy pt-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
+      <p class="text-teal text-xs tracking-[0.3em] uppercase mb-4 reveal">Contact</p>
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 reveal reveal-delay-1">Get in Touch</h1>
+      <p class="text-gray-300 text-base max-w-3xl reveal reveal-delay-2">Whether you have a specific requirement or would like an informal conversation about how we might help, we'd be pleased to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+
+        <!-- Form -->
+        <div class="lg:col-span-2 reveal">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-text-body mb-2">Name</label>
+              <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold text-text-body mb-2">Email</label>
+              <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors">
+            </div>
+            <div>
+              <label for="organisation" class="block text-sm font-semibold text-text-body mb-2">Organisation</label>
+              <input type="text" id="organisation" name="organisation" class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors">
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-semibold text-text-body mb-2">Subject</label>
+              <select id="subject" name="subject" class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm text-text-body focus:outline-none focus:border-teal transition-colors bg-white">
+                <option value="">Select a subject</option>
+                <option value="general">General Enquiry</option>
+                <option value="transformation">Transformation & Change</option>
+                <option value="finance">Finance</option>
+                <option value="digital">Digital & Technology</option>
+                <option value="people">People & Workforce</option>
+                <option value="programme">Programme Delivery</option>
+                <option value="commercial">Commercial</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-semibold text-text-body mb-2">Message</label>
+              <textarea id="message" name="message" rows="6" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-teal text-navy font-semibold py-3 px-6 rounded-sm hover:bg-teal-light transition-colors text-sm tracking-wide">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="reveal reveal-delay-1">
+          <h3 class="text-black text-lg font-bold mb-6">Contact Information</h3>
+          <div class="space-y-4 mb-8">
+            <a href="mailto:info@calicconsulting.co.uk" class="flex items-center gap-3 text-teal text-sm hover:text-teal-light transition-colors">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              info@calicconsulting.co.uk
+            </a>
+            <a href="https://www.linkedin.com/company/calic-consulting" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-teal text-sm hover:text-teal-light transition-colors">
+              <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+          <div class="border-t border-gray-200 pt-6">
+            <p class="text-gray-500 text-xs leading-relaxed">Calic Consulting Limited is a company registered in England and Wales. Registered company details available on request.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 lg:py-20 bg-grey-light">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-text-body text-lg reveal">Transformation consulting for complex organisations. Precision, expertise, and lasting impact.</p>
+    </div>
+  </section>
+
+  <div class="h-2 bg-teal"></div>
+
+  <!-- Footer -->
+  <footer class="bg-navy py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <a href="index.html" class="inline-block mb-4"><img src="assets/img-0.png" alt="Calic Consulting" class="h-[50px] md:h-[80px] w-auto"></a>
+          <p class="text-gray-400 text-sm">Transformation consulting for complex organisations.</p>
+          <p class="text-gray-400 text-sm">Precision, expertise, and lasting impact.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Quick Links</h4>
+          <nav class="flex flex-col gap-3">
+            <a href="index.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Home</a>
+            <a href="about.html" class="text-gray-400 text-sm hover:text-teal transition-colors">About</a>
+            <a href="services.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Services</a>
+            <a href="experience.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Experience</a>
+            <a href="team.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Team</a>
+            <a href="contact.html" class="text-gray-400 text-sm hover:text-teal transition-colors">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Contact</h4>
+          <a href="mailto:info@calicconsulting.co.uk" class="text-teal text-sm hover:text-teal-light transition-colors block mb-2">info@calicconsulting.co.uk</a>
+          <a href="https://www.linkedin.com/company/calic-consulting" target="_blank" rel="noopener noreferrer" class="text-gray-400 text-sm hover:text-teal transition-colors">LinkedIn</a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8">
+        <p class="text-gray-500 text-xs text-center">&copy; 2026 Calic Consulting Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY, d = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById('scrollProgress').style.width = (d > 0 ? (s/d)*100 : 0) + '%';
+    });
+    if (window.innerWidth >= 1024) {
+      const g = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', e => { g.style.left = e.clientX+'px'; g.style.top = e.clientY+'px'; });
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const org = document.getElementById('organisation').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      const body = `Name: ${name}%0AEmail: ${email}%0AOrganisation: ${org}%0ASubject: ${subject}%0A%0A${message}`;
+      window.location.href = `mailto:info@calicconsulting.co.uk?subject=${encodeURIComponent(subject || 'Website Enquiry')}&body=${body}`;
+    });
+  </script>
+
+</body>
+</html>
